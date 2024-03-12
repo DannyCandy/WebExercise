@@ -7,15 +7,15 @@
 <h2>Product Details</h2>
 
 <div>
-    <h4>Name: @Model.Name</h4>
-    <h4>Price: @Model.Price</h4>
-    <h4>Description: @Model.Description</h4>
+    <h4 class="mt-2">Name: @Model.Name</h4>
+    <h4 class="mt-2">Price: @Model.Price</h4>
+    <h4 class="mt-2">Description: @Model.Description</h4>
     
     @if (Model.ImageUrl is not null)
     {
-        <img src="@Model.ImageUrl" alt="Product Image" class="img-thumbnail" style="width: 300px"/>
+        <img src="@Model.ImageUrl" alt="Product Image" class="img-thumbnail mt-2" style="width: 300px"/>
     }
 </div>
 
-<a asp-action="Index">Back to List</a>
+<a asp-action="Index" class="btn btn-success mt-2">Back to List</a>
 
